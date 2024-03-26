@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/capture_image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:contentDescription="image_preview"
+        tools:ignore="HardcodedText,VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/text_resultat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:textColor="#32DE84"/>
+
+    <Button
+        android:id="@+id/button_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Capture Image"
+        android:textColor="@color/text_button_background_color"
+        app:backgroundTint="@color/button_background_color"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button_OCR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Use OCR"
+        android:textColor="@color/text_button_background_color"
+        app:backgroundTint="@color/button_background_color"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button_save_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Enregistrer Texte"
+        android:textColor="@color/text_button_background_color"
+        app:backgroundTint="@color/button_background_color"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
